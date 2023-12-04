@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Montserrat&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+body{
+  scroll-snap-type: y mandatory;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0D0D0D;
+  z-index: 100;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 15px 40px 0;
+}
+
+header nav{
+  display: flex;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+nav a{
+  position: relative;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+ nav a:hover,
+ nav a.active{
+  color: #F2AE2E;
+}
+
+
+.logo{
+  color: #f8f8f8;
+  font-weight: 900;
+  scale: 1.5;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-size: 8em;
+  font-weight: 800;
+  background: var(--clr);
+  scroll-snap-align: start;
+}
+
+main {
+  scroll-snap-align: start;
+}
+
+#home {
+  font-size: 2.5em;
+  font-weight: 800;
+  vertical-align: middle;
+  width: 100%;
+}
+#home h1 {
+  margin: 15rem 5rem 1rem 5rem;
+}
+#home h1 span {
+  color: #F2AE2E;
+}
+#home p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 5rem;
+}
+
+#home svg{
+  width: 30%;
+  height: fit-content;
+  position: absolute;
+  margin-top: 30rem;
+  z-index: 1;
+  user-select: none;
+  opacity: 100%;
+  transition: 1s;
+}
+
+aside {
+  background: #F2AE2E;
+  height: 150px; 
+  max-height: 100%; /* Tambahkan max-height jika diperlukan */
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-top: 40vh;
+  margin-right: -5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden; 
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+aside ul li {
+  font-size: 32px;
+  color: #0D0D0D;
+  margin: 7px 0 0 0;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden; 
+  white-space: nowrap;
+}
+
+aside ul li i {
+  overflow: hidden; /* Tambahkan ini untuk memastikan tidak ada overflow di dalam i */
+  display: inline-block; /* Tambahkan ini agar tidak ada wrap pada icon */
+  vertical-align: middle; /* Tambahkan ini agar ikon berada di tengah vertikal */
+}
+
+aside ul li:hover {
+  color: #f8f8f8;
+}
+.text{
+  height: 100%;
+  height: fit-content;
+  overflow-y: hidden;
+  margin-top: 320px;
+  margin-left: 20px;
+}
+.foto-dev{
+  overflow-y: hidden;
+  width: 650px;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-left: 5rem;
+}
+
+.foto-dev img{
+  object-fit: cover;
+  margin-top: -140px;
+  margin-left: -280px;
+  position: relative;
+  border-radius: 50%;
+}
+#skill{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#skill p{
+  font-size: 20px;
+  font-weight: 300;
+  color: #f8f8f8;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+#skill .tab-titles{
+  width: fit-content;
+  margin-top: 20px;
+  text-align: left;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+#skill .tab-links{
+  font-size: 16px;
+  font-weight: 500;
+  color: #35F242;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+#skill .tab-links:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+#skill .active-link{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.tab-contents{
+  display: flex;
+  margin-top: 15px;
+  
+}
+
+.tab-contents ul li{
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 8px; /* Change this to your preferred width */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555; /* Change this to your preferred background color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F2AE2E; /* Change this to your preferred handle color */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c98f22; /* Change this to your preferred handle color on hover */
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafi's Portofolio</title>
+    <link rel="stylesheet" href="css/main_page/main.css">
+    <link rel="stylesheet" href="css/main_page/lenis.css">
+    <script defer src="js/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/38354a3588.js" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+</head>
+
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header>
+                <a  class="logo">logo</a>
+                <nav>
+                    <a href="#home" onclick="lenis.scrollTo('#home')" class="active smooth-scroll" style="--clr: #F2F2F2">Home</a>
+                    <a href="#skill" onclick="lenis.scrollTo('#skill')" class="smooth-scroll" style="--clr: #414141">Skill</a>
+                    <a href="#project" onclick="lenis.scrollTo('#project')"  class="smooth-scroll" style="--clr: #F2F2F2">Project</a>
+                    <a href="#footer" onclick="lenis.scrollTo('#project')" class="smooth-scroll" style="--clr: #F2F2F2">Contact</a>
+                </nav>
+            </header>
+            <main id="home" class="container" style="--clr: #F2F2F2">
+                <section class="introduction">
+                    <h1 id="headline">Hello, my name <br><span>Rafi Rizqullah Ramadhan</span></h1>
+                    <p id="intro">I'm a junior programmer, now I'm studying at vocational high school 4 Bandung in the
+                        software
+                        engineering department. </p>
+                </section>
+                <svg id="wave" width="310" height="233" viewBox="0 0 310 233" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M-126 105.746L-82.8283 80.7859C-42.4107 57.4178 7.41064 57.4178 47.8283 80.7858L91 105.746L134.172 130.706C174.589 154.074 224.411 154.074 264.828 130.706L308 105.746"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M-126 84.2385L-82.8283 59.2782C-42.4107 35.9101 7.41064 35.9101 47.8283 59.2782L91 84.2385L134.172 109.199C174.589 132.567 224.411 132.567 264.828 109.199L308 84.2385"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M-126 62.7308L-82.8283 37.7705C-42.4107 14.4024 7.41064 14.4024 47.8283 37.7705L91 62.7308L134.172 87.6911C174.589 111.059 224.411 111.059 264.828 87.6911L308 62.7308"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M-126 127.254L-82.8283 102.294C-42.4107 78.9255 7.41064 78.9255 47.8283 102.294L91 127.254L134.172 152.214C174.589 175.582 224.411 175.582 264.828 152.214L308 127.254"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M-126 148.762L-82.8283 123.801C-42.4107 100.433 7.41064 100.433 47.8283 123.801L91 148.762L134.172 173.722C174.589 197.09 224.411 197.09 264.828 173.722L308 148.762"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M-126 170.269L-82.8283 145.309C-42.4107 121.941 7.41064 121.941 47.8283 145.309L91 170.269L134.172 195.23C174.589 218.598 224.411 218.598 264.828 195.23L308 170.269"
+                        stroke="#F2AE2E" stroke-width="2.46923" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <aside id="social-media">
+                    <ul>
+                        <a href="https://www.instagram.com/_urafi/" target="_blank">
+                            <li><i class="fa-brands fa-instagram "></i></li>
+                        </a>
+                        <a href="https://github.com/rrraf1" target="_blank">
+                            <li><i class="fa-brands fa-github "></i></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rafi-rizqullah-ramadhan-07886b283/" target="_blank">
+                            <li><i class="fa-brands fa-linkedin"></i></li>
+                        </a>
+                    </ul>
+                </aside>
+            </main>
+
+            <main id="skill" style="--clr: #414141">
+                <div class="container">
+                    <div class="foto-dev">
+                        <img src="img/_1409e7ca-6411-48a6-bdb0-78665670c6e6.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="explain"></div>
+                        <p>During my study at the vocational high school 4 Bandung, I have learned various kinds of
+                            programming languages and studied several programmer fields</p>
+                        <div class="tab-titles">
+                            <a onclick="opentab('fe')" class="tab-links active-link">Front-End</a>
+                            <a onclick="opentab('ds')" class="tab-links">Data Science</a>
+                            <a onclick="opentab('gd')" class="tab-links">Game Development</a>
+                            <a onclick="opentab('ad')" class="tab-links">Android Development</a>
+                        </div>
+                        <div class="tab-contents active-tab" id="fe">
+                            <ul>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                                <li>lorem</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="ds">
+                            <p>asd</p>
+                        </div>
+                        <div class="tab-contents" id="gd"></div>
+                        <div class="tab-contents" id="ad"></div>
+                    </div>
+
+
+
+
+                </div>
+            </main>
+
+            <main id="project" class="container" style="--clr: #F2F2F2">Project</main>
+
+            <footer id="footer"></footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+    <sCript>
+        const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+    </sCript>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
