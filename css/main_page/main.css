@@ -179,7 +179,7 @@ aside ul li:hover {
 }
 #skill .tab-titles{
   width: fit-content;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: left;
   height: fit-content;
   position: relative;
@@ -187,12 +187,14 @@ aside ul li:hover {
   flex-direction: row;
   gap: 50px;
 }
-#skill .tab-links{
+#skill .tab-links {
+  position: relative;
   font-size: 16px;
   font-weight: 500;
-  color: #35F242;
+  color: #f8f8f8;
   opacity: 0.6;
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; /* Assuming these are links */
 }
 
 #skill .tab-links:hover{
@@ -200,23 +202,40 @@ aside ul li:hover {
   cursor: pointer;
 }
 
-#skill .active-link{
-  opacity: 1;
-  text-decoration: underline;
+#skill .tab-links::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline as needed */
+  background-color: #6DDE8D;
+  transition: width 0.3s ease-in-out;
 }
 
+#skill .tab-links.active-link::before {
+  width: 100%;
+}
+
+#skill .active-link {
+  opacity: 1;
+  text-decoration: none;
+  color: #f8f8f8;
+}
 .tab-contents{
   display: flex;
-  margin-top: 15px;
-  
+  margin-top: 15px; 
 }
 
 .tab-contents ul li{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #f8f8f8;
 }
-
+.tab-contents ul li span{
+  color: #6DDE8D;
+}
 .tab-contents{
   display: none;
 }
@@ -224,6 +243,7 @@ aside ul li:hover {
 .tab-contents.active-tab{
   display: block;
 }
+
 
 /* Width */
 ::-webkit-scrollbar {

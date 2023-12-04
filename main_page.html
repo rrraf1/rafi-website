@@ -16,12 +16,16 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <header>
-                <a  class="logo">logo</a>
+                <a class="logo">logo</a>
                 <nav>
-                    <a href="#home" onclick="lenis.scrollTo('#home')" class="active smooth-scroll" style="--clr: #F2F2F2">Home</a>
-                    <a href="#skill" onclick="lenis.scrollTo('#skill')" class="smooth-scroll" style="--clr: #414141">Skill</a>
-                    <a href="#project" onclick="lenis.scrollTo('#project')"  class="smooth-scroll" style="--clr: #F2F2F2">Project</a>
-                    <a href="#footer" onclick="lenis.scrollTo('#project')" class="smooth-scroll" style="--clr: #F2F2F2">Contact</a>
+                    <a href="#home" onclick="lenis.scrollTo('#home')" class="active smooth-scroll"
+                        style="--clr: #F2F2F2">Home</a>
+                    <a href="#skill" onclick="lenis.scrollTo('#skill')" class="smooth-scroll"
+                        style="--clr: #414141">Skill</a>
+                    <a href="#project" onclick="lenis.scrollTo('#project')" class="smooth-scroll"
+                        style="--clr: #F2F2F2">Project</a>
+                    <a href="#footer" onclick="lenis.scrollTo('#project')" class="smooth-scroll"
+                        style="--clr: #F2F2F2">Contact</a>
                 </nav>
             </header>
             <main id="home" class="container" style="--clr: #F2F2F2">
@@ -78,17 +82,20 @@
                         <p>During my study at the vocational high school 4 Bandung, I have learned various kinds of
                             programming languages and studied several programmer fields</p>
                         <div class="tab-titles">
-                            <a onclick="opentab('fe')" class="tab-links active-link">Front-End</a>
+                            <a onclick="opentab('fe')" class="tab-links active-link">Web Development</a>
                             <a onclick="opentab('ds')" class="tab-links">Data Science</a>
                             <a onclick="opentab('gd')" class="tab-links">Game Development</a>
                             <a onclick="opentab('ad')" class="tab-links">Android Development</a>
                         </div>
                         <div class="tab-contents active-tab" id="fe">
                             <ul>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
-                                <li>lorem</li>
+                                <li><span>Front End Developer</span>
+                                    <dt>I have learned various languages used in the front end, one of which is php and
+                                        javascript. </dt>
+                                </li>
+                                <li><span>Back End Developer</span>
+                                    <dt>Good experience in the use of java, python, and c#.</dt>
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="ds">
@@ -97,10 +104,6 @@
                         <div class="tab-contents" id="gd"></div>
                         <div class="tab-contents" id="ad"></div>
                     </div>
-
-
-
-
                 </div>
             </main>
 
@@ -117,16 +120,16 @@
     <sCript>
         const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
 
-requestAnimationFrame(raf)
+        requestAnimationFrame(raf)
     </sCript>
     <script>
 
