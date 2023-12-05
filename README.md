@@ -1,1 +1,1 @@
-Not finished, desktop only
+Not finished, only desktop
