@@ -10,12 +10,13 @@
     <script defer src="js/scroll.js"></script>
     <script src="https://kit.fontawesome.com/38354a3588.js" crossorigin="anonymous"></script>
     <script src="js/navbar.js"></script>
+    
 </head>
 
 <body>
     <div id="smooth-wrapper">
         <div id="smooth-content">
-            <header>
+            <header>    
                 <a class="logo">logo</a>
                 <nav>
                     <a href="#home" onclick="lenis.scrollTo('#home')" class="active smooth-scroll"
@@ -107,7 +108,20 @@
                 </div>
             </main>
 
-            <main id="project" class="container" style="--clr: #F2F2F2">Project</main>
+            <main id="project" style="--clr: #F2F2F2">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card" onclick="moveToAnotherFile()">
+                            <h1 class="project-division"><span style="color: #F2AE2E;">Web</span><br> Development</h1> 
+                            <div class="circle circle-1"></div>
+                        </div>
+                        <div class="card" onclick="moveToAnotherFile()"><h1><span style="color: #48945e;">Game</span> <br>Development</h1> 
+                            <div class="circle circle-2"></div></div>
+                        <div class="card" onclick="moveToAnotherFile()"> <h1><span style="color: #915EFF;">Android</span> Development</h1>
+                            <div class="circle circle-3"></div></div>
+                    </div>
+                </div>
+            </main>
 
             <footer id="footer"></footer>
         </div>
@@ -145,6 +159,13 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+
+    </script>
+    <script>
+        function moveToAnotherFile() {
+    // Redirect to another file or perform any action you desire
+    window.location.href = 'under-construction.html';
+}
 
     </script>
 </body>

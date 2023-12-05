@@ -14,6 +14,7 @@ html{
 
 body{
   scroll-snap-type: y mandatory;
+  
 }
 
 a{
@@ -59,7 +60,7 @@ nav a{
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   display: flex;
   font-size: 8em;
@@ -242,6 +243,70 @@ aside ul li:hover {
 
 .tab-contents.active-tab{
   display: block;
+}
+
+#project h1{
+  font-size: 38px;
+  position: relative;
+  color: #f8f8f8;
+  z-index: 2;
+  text-align: center;
+  margin-top: 45px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.card-group{
+  display: flex;
+  height: fit-content;
+  gap: 2rem;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.card{
+  overflow: hidden;
+  background: rgb(41, 41, 41);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 520px;
+  height: 200px;
+  border-radius: 40px 0 40px 40px;
+}
+
+
+.circle{
+  background: #FFA500;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: -150px;
+  margin-left: 350px;
+  transition: all 0.4s ease-in-out;
+}
+
+.circle-2{
+  background: #48945e;
+}
+
+.circle-3{
+  background: #915EFF;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.card:hover .circle{
+  scale: 12;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#project .card span{
+  transition: all 0.5s ease-in-out;
+}
+#project .card:hover span{
+  color: #fff !important;
 }
 
 
