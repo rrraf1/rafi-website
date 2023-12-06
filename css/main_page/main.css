@@ -245,6 +245,18 @@ aside ul li:hover {
   display: block;
 }
 
+#box-decoration{
+  position: absolute;
+  scale: 2;
+}
+
+#circle-decoration{
+  scale: 2;
+  margin-top: 690px;
+  margin-left: 500px;
+  opacity: 40%;
+  position: absolute;
+}
 #project h1{
   font-size: 38px;
   position: relative;
