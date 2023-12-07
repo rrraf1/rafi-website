@@ -248,11 +248,13 @@ aside ul li:hover {
 #box-decoration{
   position: absolute;
   user-select: none;
+  pointer-events: none;
   scale: 2;
 }
 
 #circle-decoration{
   scale: 2;
+  pointer-events: none;
   user-select: none;
   margin-top: 690px;
   margin-left: 1200px;
